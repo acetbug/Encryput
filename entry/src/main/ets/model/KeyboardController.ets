@@ -35,6 +35,10 @@ export class KeyboardController {
     this.textInputClient?.deleteForward(length)
   }
 
+  public hide() {
+    this.keyboardController?.hide()
+  }
+
   private initWindow() {
     if (this.mContext === undefined) {
       return
