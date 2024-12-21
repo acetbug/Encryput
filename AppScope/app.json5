@@ -1,10 +1,14 @@
 {
   "app": {
+    "minAPIVersion": 12,
+    "targetAPIVersion": 13,
+    "description": "$string:description",
+    "bundleType": "app",
+    "vendor": "acetbug",
     "bundleName": "com.acetbug.encryput",
-    "vendor": "example",
     "versionCode": 1000000,
     "versionName": "1.0.0",
-    "icon": "$media:app_icon",
+    "icon": "$media:layered_image",
     "label": "$string:app_name"
   }
 }

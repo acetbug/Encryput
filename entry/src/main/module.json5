@@ -1,18 +1,26 @@
 {
   "module": {
+    "deliveryWithInstall": true,
     "name": "entry",
     "type": "entry",
     "description": "$string:module_desc",
-    "mainElement": "EntryAbility",
+    "mainElement": "EncryputService",
     "deviceTypes": [
       "phone",
       "tablet",
       "2in1"
     ],
-    "deliveryWithInstall": true,
-    "installationFree": false,
     "pages": "$profile:main_pages",
-    "abilities": [],
-    "extensionAbilities": []
+    "extensionAbilities": [
+      {
+        "name": "EncryputService",
+        "label": "$string:EncryputService_label",
+        "description": "$string:EncryputService_desc",
+        "icon": "$media:layered_image",
+        "srcEntry": "./ets/inputMethodExtensionAbility/EncryputService.ets",
+        "type": "inputMethod",
+        "exported": true
+      }
+    ]
   }
 }

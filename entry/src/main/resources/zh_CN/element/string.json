@@ -2,15 +2,15 @@
   "string": [
     {
       "name": "module_desc",
-      "value": "entry module for encryput"
+      "value": "输入法入口模块"
     },
     {
       "name": "EncryputService_label",
-      "value": "Encryput"
+      "value": "何晨光的输入法"
     },
     {
       "name": "EncryputService_desc",
-      "value": "encryput service"
+      "value": "输入法服务"
     }
   ]
 }
