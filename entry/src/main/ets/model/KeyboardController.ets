@@ -46,12 +46,12 @@ export class KeyboardController {
     let mDisplay = display.getDefaultDisplaySync()
     let dWidth = mDisplay.width
     let dHeight = mDisplay.height
-    let keyHeight = dHeight * Constants.KEYBOARD_HEIGHT_RATE
-    let nonBarPosition = dHeight - keyHeight
+    let kbHeight = Constants.KEYBOARD_HEIGHT
+    let nonBarPosition = dHeight - kbHeight
     let panelInfo: inputMethodEngine.PanelInfo = { type: inputMethodEngine.PanelType.SOFT_KEYBOARD }
     inputMethodAbility.createPanel(this.mContext, panelInfo).then(async (inputPanel) => {
       this.panel = inputPanel
-      await this.panel?.resize(dWidth, keyHeight)
+      await this.panel?.resize(dWidth, kbHeight)
       await this.panel?.moveTo(0, nonBarPosition)
       await this.panel?.setUiContent(Constants.KEYBOARD_UI_CONTENT)
     })
