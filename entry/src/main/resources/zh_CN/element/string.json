@@ -1,16 +1,12 @@
 {
   "string": [
     {
-      "name": "module_desc",
-      "value": "输入法入口模块"
+      "name": "welcome",
+      "value": "欢迎使用何晨光的输入法！"
     },
     {
-      "name": "EncryputService_label",
-      "value": "何晨光的输入法"
-    },
-    {
-      "name": "EncryputService_desc",
-      "value": "输入法服务"
+      "name": "tip",
+      "value": "点按以启用"
     }
   ]
 }

@@ -53,7 +53,7 @@ export class KeyboardController {
       this.panel = inputPanel
       await this.panel?.resize(dWidth, kbHeight)
       await this.panel?.moveTo(0, nonBarPosition)
-      await this.panel?.setUiContent(Constants.KEYBOARD_UI_CONTENT)
+      await this.panel?.setUiContent('pages/Keyboard')
     })
   }
 

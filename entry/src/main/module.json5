@@ -1,22 +1,38 @@
 {
   "module": {
-    "deliveryWithInstall": true,
     "name": "entry",
     "type": "entry",
-    "description": "$string:module_desc",
-    "mainElement": "EncryputService",
+    "deliveryWithInstall": true,
     "deviceTypes": [
       "phone",
       "tablet",
       "2in1"
     ],
     "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "label": "$string:label",
+        "startWindowBackground": "$color:startWindowBackground",
+        "startWindowIcon": "$media:layered_image",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          }
+        ]
+      }
+    ],
     "extensionAbilities": [
       {
         "name": "EncryputService",
-        "label": "$string:EncryputService_label",
-        "description": "$string:EncryputService_desc",
-        "icon": "$media:layered_image",
+        "label": "$string:label",
         "srcEntry": "./ets/inputMethodExtensionAbility/EncryputService.ets",
         "type": "inputMethod",
         "exported": true

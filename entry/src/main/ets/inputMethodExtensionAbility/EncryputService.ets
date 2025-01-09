@@ -1,5 +1,5 @@
-import { InputMethodExtensionAbility } from '@kit.IMEKit';
-import keyboardController from '../model/KeyboardController';
+import { InputMethodExtensionAbility } from '@kit.IMEKit'
+import keyboardController from '../model/KeyboardController'
 
 export default class EncryputService extends InputMethodExtensionAbility {
   onCreate() {

@@ -1,16 +1,12 @@
 {
   "string": [
     {
-      "name": "module_desc",
-      "value": "entry module for encryput"
+      "name": "welcome",
+      "value": "Welcome to use Encryput!"
     },
     {
-      "name": "EncryputService_label",
-      "value": "Encryput"
-    },
-    {
-      "name": "EncryputService_desc",
-      "value": "encryput service"
+      "name": "tip",
+      "value": "Click here to enable Encryput"
     }
   ]
 }

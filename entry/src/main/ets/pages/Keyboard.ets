@@ -4,7 +4,7 @@ import { keyValueLists, keyValueType } from '../model/KeyboardKeyData'
 
 @ComponentV2
 struct keyItem {
-  @Param @Require label: ResourceStr
+  @Param @Require label: string
   @Param @Require onclick: () => void
 
   build() {
@@ -21,7 +21,7 @@ struct keyItem {
 
 @Entry
 @ComponentV2
-struct Index {
+struct Keyboard {
   @Local upper: number = 0
 
   build() {
@@ -45,7 +45,7 @@ struct Index {
       })
       Row() {
         keyItem({
-          label: $r(this.upper == 0 ? 'sys.symbol.arrowshape_up' : 'sys.symbol.arrowshape_up_fill'),
+          label: this.upper == 0 ? '󰈽' : '󰈹',
           onclick: () => {
             this.upper ^= 1
           }
@@ -53,7 +53,7 @@ struct Index {
           .width(Constants.KEY_SHIFT_WIDTH_PERCENT)
           .padding($r('app.float.key_padding'))
         keyItem({
-          label: $r('sys.symbol.space_1'),
+          label: '󰌜',
           onclick: () => {
             keyboardController.insertText(' ')
           }
@@ -61,7 +61,7 @@ struct Index {
           .width(Constants.KEY_SPACE_WIDTH_PERCENT)
           .padding($r('app.float.key_padding'))
         keyItem({
-          label: $r('sys.symbol.delete_left'),
+          label: '󰃝',
           onclick: () => {
             keyboardController.deleteForward(1)
           }
@@ -69,7 +69,7 @@ struct Index {
           .width(Constants.KEY_BACKSPACE_WIDTH_PERCENT)
           .padding($r('app.float.key_padding'))
         keyItem({
-          label: $r('sys.symbol.chevron_down_circle'),
+          label: '󰛁',
           onclick: () => {
             keyboardController.hide()
           }

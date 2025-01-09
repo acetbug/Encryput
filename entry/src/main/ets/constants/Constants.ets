@@ -1,6 +1,5 @@
 export default class Constants {
   static readonly KEYBOARD_HEIGHT = 640
-  static readonly KEYBOARD_UI_CONTENT = 'pages/Index'
   static readonly KEY_WIDTH_PERCENT = '10%'
   static readonly KEY_HEIGHT_PERCENT = '25%'
   static readonly KEY_SHIFT_WIDTH_PERCENT = '15%'
