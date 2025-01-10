@@ -16,6 +16,7 @@ struct keyItem {
       .fontColor($r('sys.color.ohos_id_color_text_primary'))
       .backgroundColor($r('sys.color.ohos_id_color_background'))
       .onClick(this.onclick)
+      .gesture(LongPressGesture({ repeat: true, duration: 150 }).onAction(this.onclick))
   }
 }
 
@@ -43,6 +44,7 @@ struct Keyboard {
         .height(Constants.KEY_HEIGHT_PERCENT)
         .justifyContent(FlexAlign.Center)
       })
+
       Row() {
         keyItem({
           label: this.upper == 0 ? '󰈽' : '󰈹',
@@ -52,6 +54,7 @@ struct Keyboard {
         })
           .width(Constants.KEY_SHIFT_WIDTH_PERCENT)
           .padding($r('app.float.key_padding'))
+
         keyItem({
           label: '󰌜',
           onclick: () => {
@@ -60,6 +63,7 @@ struct Keyboard {
         })
           .width(Constants.KEY_SPACE_WIDTH_PERCENT)
           .padding($r('app.float.key_padding'))
+
         keyItem({
           label: '󰃝',
           onclick: () => {
@@ -68,6 +72,7 @@ struct Keyboard {
         })
           .width(Constants.KEY_BACKSPACE_WIDTH_PERCENT)
           .padding($r('app.float.key_padding'))
+
         keyItem({
           label: '󰛁',
           onclick: () => {

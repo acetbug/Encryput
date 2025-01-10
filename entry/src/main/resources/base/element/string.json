@@ -7,6 +7,10 @@
     {
       "name": "tip",
       "value": "Click here to enable Encryput"
+    },
+    {
+      "name": "try",
+      "value": "Have a try!"
     }
   ]
 }

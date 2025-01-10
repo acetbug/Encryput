@@ -2,8 +2,7 @@
   "name": "entry",
   "version": "1.0.0",
   "description": "A retarded encrypting input method.",
-  "main": "",
-  "author": "",
+  "author": "acetbug",
   "license": "MIT License"
 }
 

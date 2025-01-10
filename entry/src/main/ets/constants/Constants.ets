@@ -7,4 +7,5 @@ export default class Constants {
   static readonly KEY_BACKSPACE_WIDTH_PERCENT = '20%'
   static readonly KEY_HIDE_WIDTH_PERCENT = '15%'
   static readonly FULL_PERCENT = '100%'
+  static readonly SPACE_BETWEEN_ELEMENTS = 12
 }
